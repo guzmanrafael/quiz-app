@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Wheel } from 'react-custom-roulette';
 import { useRankingStore } from '../../store/rankingStore';
 import { useTeamStore } from '../../store/teamStore';
+import RouletteSpinAudioMp3 from '../../assets/audio/roulettespin.mp3';
+import WinRouletteAudioMp3 from '../../assets/audio/win_roulette.mp3';
+import LoseRouletteAudioMp3 from '../../assets/audio/lose_roulette.mp3';
 
 const data = [
   { option: '+5 puntos' },
@@ -17,12 +20,12 @@ const data = [
 const backgroundColors = ['#008000', '#FF0000', '#FFD700', '#0000FF', '#008000', '#FF0000', '#0000FF', '#FF0000'];
 const textColors = ['#0b3351'];
 const outerBorderColor = '#eeeeee';
-const outerBorderWidth = 10;
+const outerBorderWidth = 0;
 const innerBorderColor = '#30261a';
 const innerBorderWidth = 0;
 const innerRadius = 0;
 const radiusLineColor = '#eeeeee';
-const radiusLineWidth = 8;
+const radiusLineWidth = 1;
 const fontFamily = 'Nunito';
 const fontWeight = 'bold';
 const fontSize = 20;
@@ -34,17 +37,28 @@ function Roulette(props: any) {
   const selectedTeam = useTeamStore((state) => state.selectedTeam);
   const setRankingScore = useRankingStore((state) => state.setRankingScore);
 
+  const rouletteAudio = useRef(new Audio(RouletteSpinAudioMp3));
+  const winAudio = new Audio(WinRouletteAudioMp3);
+  const loseAudio = new Audio(LoseRouletteAudioMp3);
+
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
   const [play, setPlay] = useState(true);
 
-  const handleSpinClick = () => {
+  const handleSpinClick = async () => {
     if (!mustSpin) {
       const newPrizeNumber = Math.floor(Math.random() * data.length);
       setPrizeNumber(newPrizeNumber);
       setMustSpin(true);
       setPlay(false);
+      await delay(1000);
+      rouletteAudio.current.loop = true;
+      rouletteAudio.current.play();
     }
+  };
+
+  const delay = (ms: number) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
   };
 
   const exit = () => {
@@ -81,8 +95,14 @@ function Roulette(props: any) {
           startingOptionIndex={2}
           textDistance={textDistance}
           onStopSpinning={() => {
+            rouletteAudio.current.pause();
+            rouletteAudio.current.currentTime = 0;
+            if (prizeNumber === 0 || prizeNumber === 4 || prizeNumber === 2) {
+              winAudio.play();
+            } else {
+              loseAudio.play();
+            }
             setMustSpin(false);
-            console.log('prizeNumber: ', prizeNumber);
           }}
         />
       </div>

@@ -190,4 +190,119 @@ export let QuestionsData = [
       },
     ],
   },
+  {
+    id: 11,
+    status: false,
+    question: '¿Quién vio a un varón delante de él con una espada desenvainada en su mano?',
+    choices: [
+      {
+        answer: 'Abraham',
+        isCorrect: false,
+      },
+      {
+        answer: 'Sanson',
+        isCorrect: false,
+      },
+      {
+        answer: 'Josué',
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    id: 12,
+    status: false,
+    question: '¿Cuántas mujeres tuvo Salomón?',
+    choices: [
+      {
+        answer: '700 esposas y 300 concubinas',
+        isCorrect: true,
+      },
+      {
+        answer: '3 esposas',
+        isCorrect: false,
+      },
+      {
+        answer: '100 concubinas',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 13,
+    status: false,
+    question: '¿Qué animales envió Noe para ver si el agua había decrecido?',
+    choices: [
+      {
+        answer: '1 perro y 1 paloma',
+        isCorrect: false,
+      },
+      {
+        answer: 'un cuervo y una paloma',
+        isCorrect: true,
+      },
+      {
+        answer: '2 Palomas',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 14,
+    status: false,
+    question: '¿Que escaseaba en los tiempos de Samuel?',
+    choices: [
+      {
+        answer: 'El agua',
+        isCorrect: false,
+      },
+      {
+        answer: 'El pan',
+        isCorrect: false,
+      },
+      {
+        answer: 'La palabra de Jehová',
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    id: 15,
+    status: false,
+    question:
+      '¿A cuál profeta Dios le dijo: "Antes que te formase en el vientre te conocí, y antes que naciese te santifique, te di por profetas a las naciones"?',
+    choices: [
+      {
+        answer: 'Isaías',
+        isCorrect: false,
+      },
+      {
+        answer: 'Daniel',
+        isCorrect: false,
+      },
+      {
+        answer: 'Jeremías',
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    id: 16,
+    status: false,
+    question: '¿Cuántos años tenía Moises cuando habló al faraón?',
+    choices: [
+      {
+        answer: '40 años',
+        isCorrect: false,
+      },
+      {
+        answer: '80 años',
+        isCorrect: true,
+      },
+      {
+        answer: '120 años',
+        isCorrect: false,
+      },
+    ],
+  },
 ];

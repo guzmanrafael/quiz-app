@@ -45,7 +45,7 @@ export const CardGame = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-[#2BA0BA] dark:bg-[#2BA0BA]/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-[#3F33B0] dark:bg-[#3F33B0]/[0.8] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -63,9 +63,9 @@ export const CardGame = ({
             <div>
               <div className="w-full flex flex-col items-center">
                 <div className="flex flex-col items-center py-6 space-y-3">
-                  <h2 className="text-black text-xl font-semibold items-center">{item.title}</h2>
-                  <span className="text-lg text-black">{item.description}</span>
-                  <span className="text-lg text-black ">{item.numberOfQuestions} preguntas</span>
+                  <h2 className="text-white text-xl font-semibold items-center">{item.title}</h2>
+                  <span className="text-lg text-white">{item.description}</span>
+                  <span className="text-lg text-white ">{item.numberOfQuestions} preguntas</span>
                 </div>
                 <div className="w-3/4 flex flex-col">
                   <div className="max-w-xs mx-auto">
@@ -205,7 +205,7 @@ export const Card = ({ className, children }: { className?: string; children: Re
   return (
     <div
       className={cn(
-        'rounded-2xl h-full w-full p-4 overflow-hidden bg-[#FFFFFF] border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20',
+        'rounded-2xl h-full w-full p-4 overflow-hidden bg-[#3F33B0] border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20',
         className,
       )}
     >
