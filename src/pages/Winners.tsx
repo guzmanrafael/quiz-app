@@ -12,7 +12,6 @@ function Winners() {
   let [inGame, setInGame] = useState(true);
   const navigate = useNavigate();
   const [isExploding, setIsExploding] = useState(false);
-  let numeros = 1;
   const largeProps: ConfettiProps = {
     force: 0.8,
     duration: 3000,
@@ -22,6 +21,8 @@ function Winners() {
   };
 
   const reset = () => {
+    console.log(lockChoices);
+    console.log(inGame);
     setLockChoices(true);
     setInGame(true);
     navigate('/match');
