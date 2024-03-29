@@ -181,10 +181,10 @@ function Ronda() {
           </div>
         </div>
         <div className="lg:w-10/12 p-5 rounded-lg lg:rounded-l-none bg-[#594ECA]">
-          <FollowerPointerCard title={selectedTeam?.name}>
-            <div className="flex justify-center">
-              <div className="bg-[#5549C7] overflow-hidden container relative shadow-lg rounded-lg px-8">
-                {inGame && question ? (
+          <div className="flex justify-center">
+            <div className="bg-[#5549C7] overflow-hidden container relative shadow-lg rounded-lg px-8">
+              {inGame && question ? (
+                <FollowerPointerCard title={selectedTeam?.name}>
                   <div className="relative z-20">
                     <div className="mt-3 mb-6 flex justify-between ">
                       <div className="text-white text-4xl flex items-center">
@@ -294,27 +294,27 @@ function Ronda() {
                       ) : null}
                     </div>
                   </div>
-                ) : (
-                  <div className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                      <figure className="mt-10">
-                        <figcaption className="mt-10">
-                          <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                            <button
-                              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-none"
-                              onClick={() => winnersPage()}
-                            >
-                              Ganadores
-                            </button>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
+                </FollowerPointerCard>
+              ) : (
+                <div className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:px-8">
+                  <div className="mx-auto max-w-2xl lg:max-w-4xl">
+                    <figure className="mt-10">
+                      <figcaption className="mt-10">
+                        <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+                          <button
+                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-none"
+                            onClick={() => winnersPage()}
+                          >
+                            Ganadores
+                          </button>
+                        </div>
+                      </figcaption>
+                    </figure>
                   </div>
-                )}
-              </div>
+                </div>
+              )}
             </div>
-          </FollowerPointerCard>
+          </div>
         </div>
       </div>
       {showRoulette ? (

@@ -116,7 +116,7 @@ export const FollowPointer = ({ x, y, title }: { x: any; y: any; title?: string 
         }}
         className={'px-1 py-1 bg-neutral-200 text-white whitespace-nowrap min-w-max text-3xl rounded-full'}
       >
-        {title || `William Shakespeare`}
+        {title || `William`}
       </motion.div>
     </motion.div>
   );
