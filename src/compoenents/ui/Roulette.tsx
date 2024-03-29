@@ -18,18 +18,7 @@ const data = [
 ];
 
 const backgroundColors = ['#008000', '#FF0000', '#FFD700', '#0000FF', '#008000', '#FF0000', '#0000FF', '#FF0000'];
-const textColors = ['#0b3351'];
-const outerBorderColor = '#eeeeee';
-const outerBorderWidth = 0;
-const innerBorderColor = '#30261a';
-const innerBorderWidth = 0;
-const innerRadius = 0;
-const radiusLineColor = '#eeeeee';
-const radiusLineWidth = 1;
-const fontFamily = 'Nunito';
-const fontWeight = 'bold';
 const fontSize = 30;
-const fontStyle = 'normal';
 const textDistance = 60;
 const spinDuration = 1.0;
 
@@ -79,18 +68,7 @@ function Roulette(props: any) {
           prizeNumber={prizeNumber}
           data={data}
           backgroundColors={backgroundColors}
-          //textColors={textColors}
-          //fontFamily={fontFamily}
           fontSize={fontSize}
-          //fontWeight={fontWeight}
-          //fontStyle={fontStyle}
-          //outerBorderColor={outerBorderColor}
-          //outerBorderWidth={outerBorderWidth}
-          //innerRadius={innerRadius}
-          //innerBorderColor={innerBorderColor}
-          //innerBorderWidth={innerBorderWidth}
-          //radiusLineColor={radiusLineColor}
-          //radiusLineWidth={radiusLineWidth}
           spinDuration={spinDuration}
           startingOptionIndex={2}
           textDistance={textDistance}
