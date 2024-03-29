@@ -305,4 +305,270 @@ export let QuestionsData = [
       },
     ],
   },
+  {
+    id: 17,
+    status: false,
+    question: '¿Qué apóstol fue un recaudador de impuestos?',
+    choices: [
+      {
+        answer: 'Tomas',
+        isCorrect: false,
+      },
+      {
+        answer: 'Mateo',
+        isCorrect: true,
+      },
+      {
+        answer: 'Andres',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 18,
+    status: false,
+    question: '¿Qué animales alimentaron al profeta Elias?',
+    choices: [
+      {
+        answer: 'Codornices',
+        isCorrect: false,
+      },
+      {
+        answer: 'Cuervos',
+        isCorrect: true,
+      },
+      {
+        answer: 'Perros',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 19,
+    status: false,
+    question: '¿Cuál fue la segunda plaga que Dios envió sobre Egipto?',
+    choices: [
+      {
+        answer: 'Piojos',
+        isCorrect: false,
+      },
+      {
+        answer: 'Ranas',
+        isCorrect: true,
+      },
+      {
+        answer: 'Granizo',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 20,
+    status: false,
+    question: '¿De que hizo Dios a Adan?',
+    choices: [
+      {
+        answer: 'Monos',
+        isCorrect: false,
+      },
+      {
+        answer: 'Polvo',
+        isCorrect: true,
+      },
+      {
+        answer: 'Árboles',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 21,
+    status: false,
+    question: '¿Cuántos años vivió Abraham?',
+    choices: [
+      {
+        answer: '1250 años',
+        isCorrect: false,
+      },
+      {
+        answer: '930 años',
+        isCorrect: true,
+      },
+      {
+        answer: '87 años',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 22,
+    status: false,
+    question: '¿Qué hizo Dios con Caín luego de que mató a Abel?',
+    choices: [
+      {
+        answer: 'lo bendijo',
+        isCorrect: false,
+      },
+      {
+        answer: 'lo maldijo',
+        isCorrect: true,
+      },
+      {
+        answer: 'lo asesinó',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 23,
+    status: false,
+    question: '¿Cuántos años tenía Noe cuando murió?',
+    choices: [
+      {
+        answer: '990 años',
+        isCorrect: false,
+      },
+      {
+        answer: '950 años',
+        isCorrect: true,
+      },
+      {
+        answer: '602 años',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 24,
+    status: false,
+    question: '¿Qué significa el nombre de Abraham?',
+    choices: [
+      {
+        answer: 'Hombre de muchos talentos',
+        isCorrect: false,
+      },
+      {
+        answer: 'Padre de muchas naciones',
+        isCorrect: true,
+      },
+      {
+        answer: 'General de muchos ejércitos',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 25,
+    status: false,
+    question: '¿Quién era el padre de Lot?',
+    choices: [
+      {
+        answer: 'Teraj',
+        isCorrect: false,
+      },
+      {
+        answer: 'Harán',
+        isCorrect: true,
+      },
+      {
+        answer: 'Najor',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 26,
+    status: false,
+    question: '¿Qué le dio Jacob a José?',
+    choices: [
+      {
+        answer: 'Comida',
+        isCorrect: false,
+      },
+      {
+        answer: 'Un abrigo de colores',
+        isCorrect: true,
+      },
+      {
+        answer: 'Una casa',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 27,
+    status: false,
+    question: '¿Dónde o cómo habló DIOS con Moises por primera vez?',
+    choices: [
+      {
+        answer: 'A través de un ángel',
+        isCorrect: false,
+      },
+      {
+        answer: 'En una zarza ardiente',
+        isCorrect: true,
+      },
+      {
+        answer: 'En una nube',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 28,
+    status: false,
+    question: '¿Dónde o cómo habló DIOS con Moises por primera vez?',
+    choices: [
+      {
+        answer: 'Jesús',
+        isCorrect: false,
+      },
+      {
+        answer: 'Elias',
+        isCorrect: true,
+      },
+      {
+        answer: 'David',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 29,
+    status: false,
+    question: '¿Cuál era la nacionalidad de Mardoqueo?',
+    choices: [
+      {
+        answer: 'Romano',
+        isCorrect: false,
+      },
+      {
+        answer: 'Judio',
+        isCorrect: true,
+      },
+      {
+        answer: 'hebreo',
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: 30,
+    status: false,
+    question: '¿A quién se dirigió Juan en su tercera carta?',
+    choices: [
+      {
+        answer: 'A su esposa',
+        isCorrect: false,
+      },
+      {
+        answer: 'A Gallo',
+        isCorrect: true,
+      },
+      {
+        answer: 'Moises',
+        isCorrect: false,
+      },
+    ],
+  },
 ];

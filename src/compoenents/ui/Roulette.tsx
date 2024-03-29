@@ -10,10 +10,10 @@ const data = [
   { option: '+5 puntos' },
   { option: '-5 puntos', style: { textColor: '#FFFFFF' } },
   { option: '+10 puntos' },
-  { option: 'NADA' },
+  { option: 'NADA', style: { textColor: '#FFFFFF' } },
   { option: '+5 puntos' },
   { option: '-5 puntos', style: { textColor: '#FFFFFF' } },
-  { option: 'NADA' },
+  { option: 'NADA', style: { textColor: '#FFFFFF' } },
   { option: '-5 puntos', style: { textColor: '#FFFFFF' } },
 ];
 
@@ -28,7 +28,7 @@ const radiusLineColor = '#eeeeee';
 const radiusLineWidth = 1;
 const fontFamily = 'Nunito';
 const fontWeight = 'bold';
-const fontSize = 20;
+const fontSize = 30;
 const fontStyle = 'normal';
 const textDistance = 60;
 const spinDuration = 1.0;
@@ -51,7 +51,7 @@ function Roulette(props: any) {
       setPrizeNumber(newPrizeNumber);
       setMustSpin(true);
       setPlay(false);
-      await delay(1000);
+      await delay(980);
       rouletteAudio.current.loop = true;
       rouletteAudio.current.play();
     }
@@ -73,35 +73,35 @@ function Roulette(props: any) {
 
   return (
     <div className="grid items-center justify-center">
-      <div className="mt-5">
+      <div className="mt-5 wheel">
         <Wheel
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
           data={data}
           backgroundColors={backgroundColors}
-          textColors={textColors}
-          fontFamily={fontFamily}
+          //textColors={textColors}
+          //fontFamily={fontFamily}
           fontSize={fontSize}
-          fontWeight={fontWeight}
-          fontStyle={fontStyle}
-          outerBorderColor={outerBorderColor}
-          outerBorderWidth={outerBorderWidth}
-          innerRadius={innerRadius}
-          innerBorderColor={innerBorderColor}
-          innerBorderWidth={innerBorderWidth}
-          radiusLineColor={radiusLineColor}
-          radiusLineWidth={radiusLineWidth}
+          //fontWeight={fontWeight}
+          //fontStyle={fontStyle}
+          //outerBorderColor={outerBorderColor}
+          //outerBorderWidth={outerBorderWidth}
+          //innerRadius={innerRadius}
+          //innerBorderColor={innerBorderColor}
+          //innerBorderWidth={innerBorderWidth}
+          //radiusLineColor={radiusLineColor}
+          //radiusLineWidth={radiusLineWidth}
           spinDuration={spinDuration}
           startingOptionIndex={2}
           textDistance={textDistance}
           onStopSpinning={() => {
-            rouletteAudio.current.pause();
-            rouletteAudio.current.currentTime = 0;
             if (prizeNumber === 0 || prizeNumber === 4 || prizeNumber === 2) {
               winAudio.play();
             } else {
               loseAudio.play();
             }
+            rouletteAudio.current.pause();
+            rouletteAudio.current.currentTime = 0;
             setMustSpin(false);
           }}
         />

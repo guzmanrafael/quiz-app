@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useMatchStore } from '../../store/matchStore';
 import { useQuestionStore } from '../../store/questionsStore';
 import { QuestionsData } from '../../data/Questions';
+import { GeneralQuestionsData } from '../../data/GeneralQuestions';
 
 export const CardGame = ({
   items,
@@ -25,10 +26,21 @@ export const CardGame = ({
   let [numTeams, setNumTeams] = useState(4);
   let [seconds, setSeconds] = useState(20);
 
-  const select = () => {
-    setQuestions(QuestionsData);
-    setMatch(seconds, numTeams, Math.floor(QuestionsData.length / numTeams));
-    navigate('/match');
+  const select = (item: {
+    id: number;
+    title: string;
+    numberOfQuestions: number;
+    description: string;
+  }) => {
+    if (item.id === 1) {
+      setQuestions(QuestionsData);
+      setMatch(seconds, numTeams, Math.floor(QuestionsData.length / numTeams));
+      navigate('/match');
+    } else {
+      setQuestions(GeneralQuestionsData);
+      setMatch(seconds, numTeams, Math.floor(GeneralQuestionsData.length / numTeams));
+      navigate('/match');
+    }
   };
 
   return (
@@ -187,7 +199,7 @@ export const CardGame = ({
 
                   <button
                     className="py-3 my-8 text-lg bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl text-white"
-                    onClick={select}
+                    onClick={() => select(item)}
                   >
                     Seleccionar
                   </button>

@@ -102,7 +102,7 @@ function Match() {
                       <th className="relative py-3.5 px-4"></th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-[#5549C7] dark:divide-[#5549C7] dark:bg-[#5B4FCC] ">
+                  <tbody className="bg-[#5B4FCC] divide-y divide-[#5549C7] dark:divide-[#5549C7] dark:bg-[#5B4FCC] ">
                     {teams.map((team) => (
                       <tr id={team.id} key={team.id}>
                         <td className="py-4 text-xl font-medium text-white">

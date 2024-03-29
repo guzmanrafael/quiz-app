@@ -5,3 +5,10 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafb);
 }
+
+.wheel > div:first-child {
+  width: 90vw !important;
+  max-width: 600px !important;
+  height: 90vw !important;
+  max-height: 600px !important;
+}
