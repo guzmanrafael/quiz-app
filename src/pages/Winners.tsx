@@ -57,7 +57,7 @@ function Winners() {
                         </h3>
                       </div>
 
-                      <div className="flex-auto block py-8 pt-6 px-9 bg-[#5B4FCC]">
+                      <div className="flex-auto block py-6 pt-3 px-9 bg-[#5B4FCC]">
                         <div className="overflow-x-auto">
                           <table className="w-full my-0 align-middle text-white border-neutral-200">
                             <thead className="align-bottom">
@@ -107,7 +107,7 @@ function Winners() {
           </div>
         </div>
         <div>
-          <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+          <div className="flex items-center justify-center space-x-3 text-base">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
               onClick={() => reset()}

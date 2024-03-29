@@ -171,7 +171,7 @@ function Ronda() {
                     <li className="flex items-center py-4 px-8" key={team.id}>
                       <span className="text-white text-4xl font-medium mr-4">{numeros++}.</span>
                       <div className="flex-1">
-                        <h3 className="text-5xl font-medium text-white">{team.teamName}</h3>
+                        <h3 className="text-4xl font-medium text-white">{team.teamName}</h3>
                         <p className="text-4xl text-white">{team.score} puntos</p>
                       </div>
                     </li>
